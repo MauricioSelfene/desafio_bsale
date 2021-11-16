@@ -1,0 +1,26 @@
+<%- include layouts/header.ejs %>
+
+<div class="container">
+    <h1><%= title %></h1>
+
+    <div class="row">
+
+        <% for(var productos=0; productos<Product.length; productos++) { %>
+
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title"> <%=Product[productos].name.toUpperCase() %> </h5>
+                    <a href="/seleccion/<%=Product[productos].id %>" id="<%=Product[productos].id %>" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                </div>
+                
+        <% } %>
+
+    </div>
+</div>
+
+
+<%- include layouts/footer.ejs %>
+

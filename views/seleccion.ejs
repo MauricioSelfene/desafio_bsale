@@ -1,0 +1,27 @@
+<%- include layouts/header.ejs %>
+
+<div class="container">
+    <h1><%= title %></h1>
+
+    <div class="row">
+
+        <% for(var seleccion=0; seleccion<Select.length; seleccion++) { %>
+
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="<%=Select[seleccion].url_image %>" class="card-img-top" alt="100">
+                    <div class="card-body">
+                    <h5 class="card-title"> <%=Select[seleccion].name %> </h5>
+                    <p class="card-text"><%=Select[seleccion].price %></p>
+                    <a href="#" class="btn btn-primary btn-sm">Agregar</a>
+                    </div>
+                </div>
+                </div>
+
+        <% } %>
+
+    </div>
+</div>
+
+
+<%- include layouts/footer.ejs %> 
