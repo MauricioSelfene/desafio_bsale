@@ -72,7 +72,7 @@ npm start
 
 ## Despliegue 📦
 
-_Diploy hecho en heroku usando el heroku-cli_
+_Deploy hecho en heroku usando el heroku-cli_
 
 
 ## Licencia 📄
